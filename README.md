@@ -1,6 +1,6 @@
 # DCBypass
 
-**DCBypass**, Windows üzerinde herhangi bir çekirdek sürücüsü (kernel driver / WinDivert) veya VPN kullanmadan, yalnızca belirlenen alan adları için yerel proxy üzerinden **DNS-over-HTTPS (DoH)** ve **TLS Record Split** uygulayan hafif ve açık kaynaklı bir ağ aracıdır.
+**DCBypass**, Discord için sürücüsüz, VPN'siz ve sistem tepsisinde çalışan yerel TLS/DPI bypass proxy aracıdır.
 
 ---
 
@@ -29,18 +29,19 @@ Bazı internet servis sağlayıcıları (ISS), belirli alan adlarına erişimi D
 
 ---
 
-## İndirme (Sürümler)
+## Nasıl İndirilir?
 
-[Releases](https://github.com/OsmanYavuz-web/DCBypass/releases) sayfasında iki sürüm bulunur:
-
-- **`DCBypass-Standalone.exe` (~68 MB):** İçerisinde .NET 8 çalışma ortamı gömülüdür. Ek kurulum gerektirmez, her Windows 10/11 (64-bit) bilgisayarda doğrudan çalışır. *(Boyutunun ~68 MB olmasının tek sebebi .NET 8 runtime'ının içine paketlenmiş olmasıdır.)*
-- **`DCBypass-Lite.exe` (~200 KB):** Çok küçüktür ancak bilgisayarda **.NET 8 Desktop Runtime** kurulu olmasını gerektirir.
+1. Sağdaki **Releases** bölümüne veya doğrudan **[Releases sayfasına](https://github.com/OsmanYavuz-web/DCBypass/releases/latest)** gidin.
+2. **Assets** altından ihtiyacınıza uygun `.exe` dosyasını indirin:
+   - **`DCBypass-Standalone.exe` (~68 MB):** *(Önerilen)* İçerisinde .NET 8 çalışma ortamı gömülüdür. Ek kurulum gerektirmez, her Windows 10/11 (64-bit) bilgisayarda doğrudan çalışır. *(Boyutunun ~68 MB olmasının tek sebebi .NET 8 runtime'ının içine paketlenmiş olmasıdır.)*
+   - **`DCBypass-Lite.exe` (~200 KB):** Çok küçüktür ancak bilgisayarda **.NET 8 Desktop Runtime** kurulu olmasını gerektirir.
+3. İndirdiğiniz `.exe` dosyasına çift tıklayıp çalıştırın (kurulum gerektirmez).
 
 ---
 
 ## Kullanım
 
-1. `DCBypass.exe` dosyasına çift tıklayın.
+1. İndirdiğiniz `DCBypass-Standalone.exe` (veya `DCBypass-Lite.exe`) dosyasına çift tıklayın.
 2. Siyah komut penceresi açılmaz; uygulama sağ altta **sistem tepsisinde (System Tray)** yeşil simgeyle çalışmaya başlar.
 3. Discord'u kendi normal kısayolundan açabilir veya tepsi simgesine sağ tıklayıp **Discord'u Başlat / Kapat** seçeneğini kullanabilirsiniz.
 4. İşiniz bittiğinde simgeye sağ tıklayıp **Çıkış** deyin — Windows proxy ayarı otomatik olarak eski haline döner.
