@@ -29,6 +29,15 @@ Bazı internet servis sağlayıcıları (ISS), belirli alan adlarına erişimi D
 
 ---
 
+## İndirme (Sürümler)
+
+[Releases](https://github.com/OsmanYavuz-web/DCBypass/releases) sayfasında iki sürüm bulunur:
+
+- **`DCBypass-Standalone.exe` (~68 MB):** İçerisinde .NET 8 çalışma ortamı gömülüdür. Ek kurulum gerektirmez, her Windows 10/11 (64-bit) bilgisayarda doğrudan çalışır. *(Boyutunun ~68 MB olmasının tek sebebi .NET 8 runtime'ının içine paketlenmiş olmasıdır.)*
+- **`DCBypass-Lite.exe` (~200 KB):** Çok küçüktür ancak bilgisayarda **.NET 8 Desktop Runtime** kurulu olmasını gerektirir.
+
+---
+
 ## Kullanım
 
 1. `DCBypass.exe` dosyasına çift tıklayın.
